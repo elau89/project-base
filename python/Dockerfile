@@ -1,12 +1,7 @@
 FROM base:1.0
 LABEL maintainer="elau89@gmail.com" \
       version="1.0" \
-      description="Updated Base image for C++ projects"
-
-# Specify package versions
-ARG BOOST_VERSION=1.63.0
-ARG PROTOBUF_VERSION=3.2.0
-ARG ZEROMQ_VERSION=4.2.1
+      description="Updated Base image for Python projects"
 
 # Install required build tools
 RUN dnf install -y \
