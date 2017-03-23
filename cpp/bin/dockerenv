@@ -18,7 +18,7 @@ export OLD_PATH=$PATH
 if [ -n "$ZSH_VERSION" ]; then
     export BIN_PATH=${0:a:h}
 elif [ -n "$BASH_VERSION" ]; then
-    export BIN_PATH="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+    export BIN_PATH="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 else
     echo "The current shell is not supported"
     return 3
